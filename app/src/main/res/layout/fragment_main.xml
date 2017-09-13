@@ -38,6 +38,7 @@
 
             <!--User-->
             <EditText
+                android:id="@+id/edtEmail"
                 android:textColorHint="@color/colorPrimary"
                 android:textColor="@color/colorPrimaryDark"
                 android:hint="@string/e_mail"
@@ -62,6 +63,7 @@
 
             <!--Password-->
             <EditText
+                android:id="@+id/edtPassword"
                 android:textColorHint="@color/colorPrimary"
                 android:textColor="@color/colorPrimaryDark"
                 android:hint="@string/password"
@@ -74,7 +76,7 @@
         </LinearLayout>
         <!--Button Sing In-->
         <Button
-
+            android:id="@+id/btnSingIn"
             android:textColor="#ffffff"
             android:background="@color/colorPrimary"
             android:text="sign in"
@@ -83,6 +85,7 @@
 
         <!--New Register-->
         <TextView
+            android:id="@+id/txtNewRegister"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"
             android:layout_margin="@dimen/margin"
