@@ -59,9 +59,10 @@
             android:layout_height="wrap_content">
             <!--Icon-->
             <ImageView
-                android:src="@mipmap/ic_password"
+                android:id="@+id/imageView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_password" />
 
             <!--Password-->
             <EditText
