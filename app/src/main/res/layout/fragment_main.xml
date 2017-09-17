@@ -11,9 +11,9 @@
         android:orientation="vertical"
         android:layout_width="@dimen/content"
         android:layout_height="wrap_content">
-        <!--Logo-->
+        <!--Logoแก้ใหม่-->
         <ImageView
-            android:src="@drawable/logocoffee2"
+            android:src="@drawable/logocoffee3"
             android:layout_width="@dimen/logo"
             android:layout_height="@dimen/logo" />
 
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <!--User-->
+        <!--Email-->
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -38,13 +38,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-            <!--User-->
+            <!--email-->
             <EditText
                 android:id="@+id/edtEmail"
                 android:textColorHint="@color/colorPrimary"
                 android:textColor="@color/colorPrimaryDark"
                 android:hint="@string/e_mail"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
