@@ -21,7 +21,7 @@ import rmutsb.mook.chatchon.makingfavorcoffee.ultility.MyAlertDialog;
 public class RegisterFragment extends Fragment {
 
     //Explicit
-    private String nameString, surnameString, idCardString, EmailString, passwordString;
+    private String nameString, surnameString, idCardString,PhoneString, EmailString, passwordString;
 
 
     @Nullable
@@ -54,20 +54,22 @@ public class RegisterFragment extends Fragment {
                 EditText nameEditText = getView().findViewById(R.id.edtName);
                 EditText surNameEditText = getView().findViewById(R.id.edtsurName);
                 EditText idCardEditText = getView().findViewById(R.id.edtidCard);
+                EditText PhoneNumberEditText = getView().findViewById(R.id.edtPhoneNumber);
                 EditText eMailEditText = getView().findViewById(R.id.edtEmail);
                 EditText passwordEditText = getView().findViewById(R.id.edtPassword);
 
                 //Get Value From Edittext
                 nameString = nameEditText.getText().toString().trim();
-                surnameString = nameEditText.getText().toString().trim();
-                idCardString= nameEditText.getText().toString().trim();
-                EmailString = nameEditText.getText().toString().trim();
-                passwordString = nameEditText.getText().toString().trim();
+                surnameString = surNameEditText.getText().toString().trim();
+                idCardString = idCardEditText.getText().toString().trim();
+                PhoneString = PhoneNumberEditText.getText().toString().trim();
+                EmailString = eMailEditText.getText().toString().trim();
+                passwordString = passwordEditText.getText().toString().trim();
 
                 //Check Space
                 if (nameString.equals("") || surnameString.equals("") ||
-                        idCardString.equals("") || EmailString.equals("") ||
-                        passwordString.equals("")){
+                        idCardString.equals("") || PhoneString.equals("")||
+                        EmailString.equals("") || passwordString.equals("")){
                     //Have Space
                     MyAlertDialog myAlertDialog = new MyAlertDialog(getActivity());
                     myAlertDialog.myDialog(getResources().getString(R.string.title_haveSpace),

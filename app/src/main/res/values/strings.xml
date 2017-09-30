@@ -4,6 +4,9 @@
     <string name="password">Password :</string>
     <string name="new_register">New Register</string>
 
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
     <string name="title_haveSpace">Have Space</string>
     <string name="messsage_haveSpace">Please Fill Every Blank</string>
     <string name="title_idCard">ID Card False</string>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="rmutsb.mook.chatchon.makingfavorcoffee.MainActivity">
+    tools:context="rmutsb.mook.chatchon.makingfavorcoffee.MainActivity"
+    android:id="@+id/drawerLayout">
 
     <!--BackGround-->
     <ImageView
@@ -13,13 +14,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-
-
     <!--content fragment-->
     <FrameLayout
         android:id="@+id/contentFragmentMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start">
+    </android.support.design.widget.NavigationView>
+
 
 </RelativeLayout>
