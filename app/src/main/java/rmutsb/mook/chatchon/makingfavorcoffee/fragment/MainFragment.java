@@ -20,8 +20,6 @@ import rmutsb.mook.chatchon.makingfavorcoffee.R;
  */
 
 public class MainFragment extends Fragment{
-    EditText
-    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
